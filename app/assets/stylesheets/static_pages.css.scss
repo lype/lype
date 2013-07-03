@@ -3,19 +3,28 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 /*  VARIABLES & DEFINITIONS */
-$MAINGREEN: #4AA147;
 $LIGHTGREEN: #95C087;
+$MAINGREEN: #4AA147;
+
+$LIGHTGRAY: #AAAAAA;
+$MEDIUMGRAY: #444444;
+$DARKGRAY: #222222;
 
 
 
+/*===========*/
 /* UNIVERSAL */
+/*===========*/
 html {
 	height: 100%;
 }
 
 body {
 	margin: 0;
-	font-family: Arial, Helvetica, sans-serif
+	font: {
+		family: Arial, Helvetica, sans-serif;
+		size: 14px;
+	}
 }
 
 .container {
@@ -25,7 +34,9 @@ body {
 
 
 
+/*========*/
 /* HEADER */
+/*========*/
 header {
 	width: 100%;
 	height: 60px;
@@ -49,7 +60,11 @@ nav {
 		li {
 			float: left;
 			margin-left: 30px;
-			color: #888;
+			color: $LIGHTGRAY;
+
+			&:hover {
+				color: $MEDIUMGRAY;
+			}
 		}
 	}
 }
@@ -59,4 +74,57 @@ nav {
 	background-color: $MAINGREEN;
 	padding: 50px 5px 5px 5px;
 	margin: -50px 0 0 100px;
+
+	&:hover {
+		color: #fff;
+	}
+}
+
+
+
+/*======*/
+/* BODY */
+/*======*/
+h1 {
+	color: $MAINGREEN;
+}
+
+p {
+	color: $MEDIUMGRAY;
+}
+
+
+
+/*========*/
+/* FOOTER */
+/*========*/
+footer {
+	width: 100%;
+	color: #fff;
+}
+
+.site-map {
+	background-color: $MEDIUMGRAY;
+	height: 150px;
+	margin-bottom: 2px;
+}
+
+.site-links {
+	ul {
+		display: inline-block;
+		list-style-type: none;
+		float: left;
+		padding: 0;
+		margin-right: 50px;
+
+		li {
+			margin-bottom: 10px;
+		}
+	}	
+}
+
+.legal-info {
+	background-color: $DARKGRAY;
+	height: 50px;
+	line-height: 50px;
 }
