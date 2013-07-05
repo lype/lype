@@ -27,6 +27,19 @@ body {
 	}
 }
 
+a:link {
+	text-decoration: none;
+	color: $LIGHTGRAY;
+}
+
+a:visited {
+	color: $LIGHTGRAY;
+}
+
+a:hover {
+	color: $MEDIUMGRAY;
+}
+
 .container {
 	width: 960px;
 	margin: 0 auto;
@@ -61,10 +74,6 @@ nav {
 			float: left;
 			margin-left: 30px;
 			color: $LIGHTGRAY;
-
-			&:hover {
-				color: $MEDIUMGRAY;
-			}
 		}
 	}
 }
@@ -76,6 +85,7 @@ nav {
 	margin: -50px 0 0 100px;
 
 	&:hover {
+		background-color: $LIGHTGREEN;
 		color: #fff;
 	}
 }
@@ -91,14 +101,19 @@ h1 {
 
 p {
 	color: $MEDIUMGRAY;
-	margin-left: 10px;
+	margin-left: 2px;
 }
 
 .banner {
+	height: 356px;
+	position: relative;
+}
+
+.banner-image {
 	background-image: url('banner-1.jpg');
 	height: 356px;
-	width: 100%;
-	position: relative;
+	width: 960px;
+	margin: 0 auto;
 }
 
 .action-bar {
@@ -107,6 +122,12 @@ p {
 	background-color: $MAINGREEN;
 	position: absolute;
 	bottom: 0;
+}
+
+.action-buttons {
+	height: 100%;
+	width: 960px;
+	margin: 0 auto;
 
 	div {
 		display: inline-block;

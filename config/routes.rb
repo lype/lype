@@ -2,6 +2,6 @@ Lype::Application.routes.draw do
   
   root to: 'static_pages#home'
 
-  #match '/learn-more', to: 'static_pages#learn'
+  get '/learn-more', to: 'static_pages#about', as: "about"
 
 end
