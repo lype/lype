@@ -7,8 +7,9 @@
 /*==========================*/
 /*  VARIABLES & DEFINITIONS */
 /*==========================*/
-$LIGHTGREEN: #95C087;
 $MAINGREEN: #4AA147;
+$LIGHTGREEN: #95C087;
+$PALEGREEN: #B3D6A7;
 
 $LIGHTGRAY: #AAAAAA;
 $MEDIUMGRAY: #444444;
@@ -158,6 +159,35 @@ p {
 
 .btn {
 	color: $MEDIUMGRAY;
+}
+
+.qa-section {
+	width: 100%;
+	display: block;
+	clear: both;
+}
+
+.q-box {
+	display: inline-block;
+	width: 340px;
+	background-color: $LIGHTGRAY;
+	border-radius: 8px;
+	float: left;
+	padding: 8px;
+
+	p {
+		color: #000;
+		font-weight: bold;
+	}
+}
+
+.a-box {
+	display: inline-block;
+	width: 580px;
+	background-color: $PALEGREEN;
+	border-radius: 8px;
+	float: right;
+	padding: 8px;
 }
 
 
