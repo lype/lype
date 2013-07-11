@@ -9,8 +9,9 @@
 /*==========================*/
 $MAINGREEN: #4AA147;
 $LIGHTGREEN: #95C087;
-$PALEGREEN: #B3D6A7;
+$PALEGREEN: #DDF2D5;
 
+$PALEGRAY: #DDDDDD;
 $LIGHTGRAY: #AAAAAA;
 $MEDIUMGRAY: #444444;
 $DARKGRAY: #222222;
@@ -48,6 +49,10 @@ a:hover {
 .container {
 	width: 960px;
 	margin: 0 auto;
+}
+
+.clear-float {
+	clear: both;
 }
 
 
@@ -164,13 +169,13 @@ p {
 .qa-section {
 	width: 100%;
 	display: block;
-	clear: both;
+	margin-bottom: 50px;
 }
 
 .q-box {
 	display: inline-block;
 	width: 340px;
-	background-color: $LIGHTGRAY;
+	background-color: $PALEGRAY;
 	border-radius: 8px;
 	float: left;
 	padding: 8px;
@@ -184,10 +189,14 @@ p {
 .a-box {
 	display: inline-block;
 	width: 580px;
-	background-color: $PALEGREEN;
+	background-color: $LIGHTGREEN;
 	border-radius: 8px;
 	float: right;
 	padding: 8px;
+
+	p {
+		color: #fff;
+	}
 }
 
 
